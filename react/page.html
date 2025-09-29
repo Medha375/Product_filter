@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Product Filter</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .product-list { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px; color: blue; }
+    .product { padding: 10px; border: 3px solid #aa0d44; border-radius: 5px; width: 150px; text-align: center; color:  #282527;}
+    select { padding: 5px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Product Filter</h2>
+
+ 
+  <label for="category">Choose Category:</label>
+  <select id="category">
+    <option value="all">All</option>
+    <option value="electronics">Electronics</option>
+    <option value="clothing">Clothing</option>
+    <option value="books">Books</option>
+    <option value="skincare">SkinCare</option>
+  </select>
+
+  <div class="product-list" id="product-list">
+    <div class="product" data-category="electronics">Laptop</div>
+    <div class="product" data-category="electronics">Headphones</div>
+    <div class="product" data-category="electronics">Charger</div>
+    <div class="product" data-category="clothing">T-Shirt</div>
+    <div class="product" data-category="clothing">Jeans</div>
+    <div class="product" data-category="clothing">kurta</div>
+    <div class="product" data-category="books">JavaScript Guide</div>
+    <div class="product" data-category="books">Data Structures</div>
+    <div class="product" data-category="books">Machine Learning</div>
+    <div class="product" data-category="skincare">Face wash</div>
+    <div class="product" data-category="skincare">Moisturizer</div>
+    <div class="product" data-category="skincare">Serums</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
